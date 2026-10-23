@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-wacom
+Source: https://github.com/KeremSoke/mate-wacom
+
+Files: *
+Copyright: 2026 Kerem Soke and other contributors
+License: GPL-3+
+ The full text of the GNU General Public License version 3 can be found in
+ /usr/share/common-licenses/GPL-3.

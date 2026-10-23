@@ -1,0 +1,22 @@
+Source: mate-wacom
+Section: x11
+Priority: optional
+Maintainer: Kerem Soke <keremsoke@gmail.com>
+Build-Depends: debhelper-compat (= 13),
+ meson (>= 1.0),
+ ninja-build,
+ pkgconf,
+ valac,
+ libglib2.0-dev,
+ libgtk-3-dev
+Standards-Version: 4.7.0
+Homepage: https://github.com/KeremSoke/mate-wacom
+Rules-Requires-Root: no
+
+Package: mate-wacom
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, x11-xserver-utils, xserver-xorg-input-wacom
+Description: graphics tablet settings window for MATE
+ GTK 3 settings utility for Wacom tablets and pens. It reads and writes
+ X11 Wacom driver settings through xsetwacom and can map a tablet to a
+ selected display area.
