@@ -40,7 +40,7 @@ jobs:
         run: |
           apt-get update
           DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-            ca-certificates git python3 xz-utils devscripts dpkg-dev \
+            ca-certificates git python3 xz-utils build-essential devscripts dpkg-dev \
             debhelper meson ninja-build pkgconf valac libglib2.0-dev libgtk-3-dev
       - uses: actions/checkout@v4
         with:
